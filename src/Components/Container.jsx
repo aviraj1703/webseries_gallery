@@ -16,26 +16,8 @@ const Container = () => {
     }
     return(
         <>
-            <Menu 
-                filterItem = { filterItem }
-                pnamess = { pnamess }
-            />
-            
-            <div className="Container">
-                {items.map((val)=>{
-                    return(
-                        <>
-                            <Cards
-                                key = {val.id}
-                                imgsrc = {val.imgsrc}
-                                title = {val.title}
-                                pname = {val.pname}
-                                link =  {val.link}
-                            />
-                        </>
-                    );
-                })}
-            </div>
+            <Menu filterItem={filterItem} pnamess={pnamess} />
+            <Cards items={items} />
         </>
     );
 }
