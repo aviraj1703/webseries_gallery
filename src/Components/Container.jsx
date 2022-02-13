@@ -6,7 +6,6 @@ import data from './Data';
 const pnames = [...new Set(data.map((ce) => ce.pname)), 'All'];
 const Container = () => {
     const [items, setItems] = useState(data);
-    const [pnamess, setPnames] = useState(pnames);
     const filterItem = (e) => {
         const updateItems = data.filter((event) => {
             return event.pname === e;
@@ -16,7 +15,7 @@ const Container = () => {
     }
     return(
         <>
-            <Menu filterItem={filterItem} pnamess={pnamess} />
+            <Menu filterItem={filterItem} pnamess={pnames} />
             <Cards items={items} />
         </>
     );
