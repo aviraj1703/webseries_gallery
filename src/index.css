@@ -1,13 +1,173 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:wght@600&family=EB+Garamond:wght@500&family=Quicksand:wght@600&display=swap');
+*{
+  margin: 0%;
+  padding: 0%;
+}
+body{
+  background-color: white;
+}
+::-webkit-scrollbar-button{
+  display: none;
+}
+::-webkit-scrollbar-corner{
+  display: none;
+}
+::-webkit-scrollbar{
+  width: 0.5rem;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(to bottom, yellow, orange, chocolate);
+  border-radius: 40px;
+}
+h1{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2.5rem;
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+  text-shadow: 3px 3px 4px rgb(128, 5, 29);
+  background-color: crimson;
+  box-shadow: 0px 3px 4px 5px rgb(226, 233, 229);
+  top: 0%;
+  padding: 1%;
+}
+.btns{
+  height: fit-content;
+  margin: 1%;
+  padding: 1.5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: all 0.3s ease;
+}
+.btns button{
+  border-radius: 3px;
+  border: none;
+  padding: 0.5%;
+  background-color: orange;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: 'EB Garamond', serif;
+  font-size: 1.1rem;
+}
+.btns button:hover{
+  cursor: pointer;
+  background-color: chocolate;
+}
+.Container{
+  width: auto;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1;
+}
+#Card{
+  width: 17rem;
+  height: 21.5rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 1px 2px 3px 4px rgb(226, 233, 229);
+  margin: 2%;
+  margin-top: 0%;
+  transition: 0.4s ease;
+}
+#Card:hover{
+  transform: scale(1.03);
+}
+#Card .Title{
+  width: 100%;
+  height: 12%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'EB Garamond', serif;
+  font-size: 1.6rem;
+  color: black;
+  text-shadow: 2px 2px 3px rgb(160, 157, 157);
+  box-sizing: border-box;
+}
+#Card .Image{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+#Card .Image img{
+  width: 100%;
+  height: 100%;
+}
+#Card .Link{
+  width: 100%;
+  height: 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: 'Andada Pro', serif;
+  font-size: 1.4rem;
+  color: brown;
+  box-sizing: border-box;
+  padding: 1%;
+  margin-bottom: 2%;
+  text-shadow: 2px 2px 3px rgb(160, 157, 157);
+}
+#Card .Link button{
+  width: 40%;
+  height: 116%;
+  border-radius: 3px;
+  border: none;
+  padding: 1%;
+  box-sizing: border-box;
+  background-color: blueviolet;
+  margin-left: 60%;
+  text-align: center;
+}
+#Card .Link button:hover{
+  background-color: orange;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+#Card .Link a{
+  font-family: 'Andada Pro', serif;
+  text-decoration: none;
+  color: aliceblue;
+  text-shadow: none;
+  font-size: 1rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media only screen and (max-width : 500px){
+  ::-webkit-scrollbar{
+    width: 0.3rem;
+  }
+  h1{
+      font-size: 2rem;
+  }
+  .btns{
+    padding: 2%;
+  }
+  .btns button{
+    font-size: 1rem;
+    padding: 1%;
+  }
+  #Card{
+      width: 16rem;
+      height: 22rem;
+      margin-top: 2%;
+  }
+  #Card .Title{
+      font-size: 1.6rem;
+  }
+  #Card .Link{
+      font-size: 1.3rem;
+  }
 }
