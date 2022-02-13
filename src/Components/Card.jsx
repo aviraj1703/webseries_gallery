@@ -9,13 +9,13 @@ const Cards = ({ items }) => {
             <div id="Card">
               <div className="Title">{val.title}</div>
               <div className="Image">
-                <img src={val.imgsrc} />
+                <img src={val.imgsrc} alt="webseries_pic" />
               </div>
               <div className="Link">
                 <span>{val.pname}</span>
                 <span>
                   <button>
-                    <a href={val.link} target="_blank">
+                    <a href={val.link} target="_blank" rel="noreferrer">
                       Watch&nbsp;now
                     </a>
                   </button>
