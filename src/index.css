@@ -51,6 +51,7 @@ h1{
   box-sizing: border-box;
   font-family: 'EB Garamond', serif;
   font-size: 1.1rem;
+  box-shadow: 1px 1px 3px 1px black;
 }
 .btns button:hover{
   cursor: pointer;
