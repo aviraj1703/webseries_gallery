@@ -6,7 +6,7 @@ const Cards = ({ items }) => {
       <div className="Container">
         {items.map((val) => {
           return (
-            <div id="Card">
+            <div  className="Card" key={val.id}>
               <div className="Title">{val.title}</div>
               <div className="Image">
                 <img src={val.imgsrc} alt="webseries_pic" />
